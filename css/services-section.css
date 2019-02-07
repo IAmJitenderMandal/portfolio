@@ -25,7 +25,7 @@
     position: relative;
     font-size: 2.5rem;
     text-transform: uppercase;
-    font-weight: 700;   
+    font-weight: 700;
     color: #16171b;
     z-index: 1;
     letter-spacing: 4px;
@@ -38,16 +38,17 @@
 }
 
 #services-section .services-container .box {
-    background:rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0);
     transition: all .4s ease-in-out;
     padding: 40px;
     cursor: pointer;
 }
+
 #services-section .services-container .box:hover {
-    background:rgba(255, 255, 255, 1);
-    -webkit-box-shadow: 0px 24px 74px 40px rgba(224,224,224,1);
--moz-box-shadow: 0px 24px 74px 40px rgba(224,224,224,1);
-box-shadow: 0px 24px 74px 40px rgba(224,224,224,1);
+    background: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 24px 74px 40px rgba(224, 224, 224, 1);
+    -moz-box-shadow: 0px 24px 74px 40px rgba(224, 224, 224, 1);
+    box-shadow: 0px 24px 74px 40px rgba(224, 224, 224, 1);
 }
 
 #services-section .services-container .box .fas {
@@ -56,7 +57,7 @@ box-shadow: 0px 24px 74px 40px rgba(224,224,224,1);
 }
 
 #services-section .services-container .box h5 {
-    font-size:.9rem;
+    font-size: .9rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -85,7 +86,19 @@ box-shadow: 0px 24px 74px 40px rgba(224,224,224,1);
 
 
 /* Tablet */
-@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 960px) {
+    #services-section .services-container {
+        grid-template-columns: 100%;
+    }
+
+    #services-section .services-container .box {
+        background: rgba(255, 255, 255, 1);
+        -webkit-box-shadow: 0px 24px 74px 40px rgba(224, 224, 224, 1);
+        -moz-box-shadow: 0px 24px 74px 40px rgba(224, 224, 224, 1);
+        box-shadow: 0px 24px 74px 40px rgba(224, 224, 224, 1);
+    }
+
+}
 
 /* Phones */
 @media only screen and (max-width: 767px) {}

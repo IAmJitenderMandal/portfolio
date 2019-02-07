@@ -70,7 +70,7 @@
     }
 
     #top .info .blue-square {
-        display: none;
+        display: block;
     }
 
     #top .img .background-img {
